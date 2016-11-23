@@ -8,7 +8,8 @@ exports.handle = (client) => {
     },
 
     prompt() {
-      client.addResponse('welcome')
+      client.addResponse('welcome'),
+      client.addResponse('ask_help'),
       client.addResponse('provide/documentation', {
         documentation_link: 'http://docs.init.ai',
       })
